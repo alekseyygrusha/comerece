@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font: normal 16px sans-serif;
+  color: #141414;
+}
+ul,
+a,
+nav {
+  list-style: none;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 13px;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+  color: #3B3B3B;
+}
+section {
+  padding: 0 60px;
+  max-width: 1400px;
+}
+header .info {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+header .info .adress {
+  width: 100%;
+  min-height: 44px;
+  border-bottom: 1px solid #D3D3D3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .info .adress .select-city {
+  position: relative;
+  margin-left: 30px;
+}
+header .info .adress .mobile-logo h2 {
+  color: #313D50;
+  font-size: 24px;
+}
+header .info .adress small {
+  font-size: 12px;
+}
+header .info .adress .mobile {
+  position: relative;
+  font-weight: bold;
+}
+header .info .adress .personal-area {
+  position: relative;
+  width: 130px;
+  text-align: right;
+}
+header .info .adress .personal-area .icon,
+header .info .adress .personal-area a {
+  color: #337FD2;
+}
+header .info .adress .personal-area .icon {
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  font-size: 24px;
+  color: #337FD2;
+}
+header .info .search {
+  width: 100%;
+  min-height: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .info .search .logo {
+  display: flex;
+}
+header .info .search .logo h2 {
+  color: #313D50;
+  line-height: 49px;
+}
+header .info .search .logo small {
+  padding-left: 12px;
+}
+header .info .search .call-number {
+  position: relative;
+  width: 165px;
+  text-align: right;
+}
+header .info .search .call-number p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 168.22%;
+}
+header .info .search .call-number .phone {
+  font-size: 42px;
+  top: 2px;
+  left: 0;
+}
+header .info .search .form-search {
+  position: relative;
+}
+header .info .search .form-search input {
+  position: relative;
+  display: inline-block;
+  width: 430px;
+  height: 43px;
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 53px;
+  padding: 0 15px;
+}
+header .info .search .form-search input:focus,
+header .info .search .form-search button:focus {
+  outline: none;
+}
+header .info .search .form-search .lupa {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 8px;
+}
+header .info .search .form-search .lupa:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #4B4B4B;
+  font-size: 22px;
+}
+header .info .search .form-search .lupa:hover {
+  cursor: pointer;
+  color: #337FD2;
+}
+header .info .search .basket {
+  position: relative;
+  align-items: center;
+  width: 150px;
+  text-align: right;
+}
+header .info .search .basket .cart {
+  font-size: 42px;
+  border-color: black;
+  top: -12px;
+  left: 0px;
+}
+header .info .search .basket .numbers-purchases {
+  padding: 5px;
+  background-color: red;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  font-weight: bold;
+}
+header .info .search .basket .price {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: #3B3B3B;
+}
+header .navigation {
+  min-height: 49px;
+  margin: 0 auto 0 auto;
+  background: #313D50;
+}
+header .navigation .topmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navigation .topmenu li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 49px;
+}
+header .navigation .topmenu li .points,
+header .navigation .topmenu li .points::after,
+header .navigation .topmenu li .points::before {
+  position: relative;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+header .navigation .topmenu li .points::after,
+header .navigation .topmenu li .points::before {
+  position: absolute;
+  content: '';
+  left: -10px;
+}
+header .navigation .topmenu li .points::before {
+  left: 10px;
+}
+header .navigation .topmenu li a {
+  color: white;
+  font-weight: bold;
+  line-height: 18px;
+}
+header .navigation .topmenu li .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 281px;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: #F9F9F9;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+header .navigation .topmenu li .submenu a {
+  padding: 10px 15px;
+  color: black;
+}
+header .navigation .topmenu li .submenu li a:hover {
+  color: #337FD2;
+}
+header .navigation .topmenu li .submenu li {
+  padding-top: 15px;
+  display: inline-block;
+  padding: ;
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+}
+header .navigation .topmenu li .shipping-payment {
+  left: -50%;
+}
+header .navigation .topmenu li .reviews,
+header .navigation .topmenu li .contacts,
+header .navigation .topmenu li .menu-item {
+  right: 0px;
+}
+header .navigation .topmenu .catalog {
+  justify-content: space-around;
+  text-align: center;
+  width: 207px;
+  height: 49px;
+  background: #0B6EDB;
+  padding-right: 15px;
+}
+header .navigation .topmenu .catalog .hamburger {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 2.5px;
+  background-color: white;
+}
+header .navigation .topmenu .catalog .hamburger::after,
+header .navigation .topmenu .catalog .hamburger::before {
+  content: '';
+  width: 20px;
+  height: 2.5px;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+header .navigation .topmenu .catalog .hamburger:before {
+  top: -8px;
+  left: 0;
+}
+header .navigation nav li:hover .submenu {
+  display: block;
+}
+header .navigation .topmenu li:hover > a {
+  color: #0B6EDB;
+}
+header .navigation .topmenu .catalog:hover > a {
+  color: #313D50;
+}
+header .icon {
+  position: absolute;
+  left: -30px;
+  top: -2px;
+  font-size: 24px;
+  color: #337FD2;
+}
+header .decore {
+  font-weight: bold;
+  color: #337FD2;
+  font-size: 13px;
+  border-bottom: 1px dashed #337FD2;
+}
+@media (max-width: 1200px) {
+  section {
+    padding: 0 88px;
+    max-width: 1200px;
+  }
+  section .adress .mobile {
+    display: none;
+  }
+  section .search .form-search input {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1920px) {
+  .mobile {
+    display: none;
+  }
+  .mobile-logo h2 {
+    display: none;
+  }
+}
+@media (max-width: 1055px) {
+  section {
+    padding: 0 88px;
+    max-width: 1000px;
+  }
+  section .adress .adress-line,
+  section .adress .schedule {
+    display: none;
+  }
+  section .adress .mobile {
+    display: block;
+  }
+  section .search .call-number {
+    display: none;
+  }
+  section .search .form-search input {
+    width: 100%;
+    max-width: 250px;
+  }
+  .navigation .topmenu .catalog {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .search .slogan {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  section {
+    padding: 0 10px;
+  }
+  .adress .mobile-logo h2 {
+    display: block;
+  }
+  .adress .mobile p {
+    font-size: 14px;
+  }
+  .adress .select-city,
+  .adress .mobile .icon,
+  .adress .personal-area {
+    display: none;
+  }
+  .info .search .form-search input {
+    max-width: 100px;
+    visibility: hidden;
+  }
+  .info .search .form-search {
+    order: 2;
+  }
+  .info .search .form-search .lupa:before {
+    color: #337FD2;
+  }
+  .info .search .logo h2 {
+    display: none;
+  }
+  .info .search .call-number {
+    margin-left: 0;
+  }
+  .info .search .points-mobile {
+    display: block;
+  }
+  .info .search .points-mobile a {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .info .search .points-mobile a:hover .points,
+  .info .search .points-mobile a:hover .points::after,
+  .info .search .points-mobile a:hover .points::before {
+    background-color: #337FD2;
+  }
+  .info .search .points-mobile .points,
+  .info .search .points-mobile .points::after,
+  .info .search .points-mobile .points::before {
+    order: -1;
+    position: relative;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #313D50;
+    border-radius: 50%;
+  }
+  .info .search .points-mobile .points::after,
+  .info .search .points-mobile .points::before {
+    position: absolute;
+    content: '';
+    left: -10px;
+  }
+  .info .search .points-mobile .points::before {
+    left: 10px;
+  }
+  .navigation {
+    display: none;
+  }
+}

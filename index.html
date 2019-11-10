@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Commerceee</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<section class="info">
+			<div class="adress">
+				<div class="select-city">
+					<div class="icon">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+					</div>
+					<small>Ваш город:</small>
+	                <select  style="width:80px; clip:rect(2px 82px 20px 2px);">
+	                	<option selected value="#">Москва</option>
+	                	<option value="#">Санкт-Петербург</option>
+	                	<option value="#">Красноярск</option>
+	                    <option value="#">Урюпинск</option>
+	                </select>
+				</div>
+				<div class="mobile-logo">
+					<h2>Commerce</h2>
+				</div>
+				<div class="mobile">
+					<div class="icon phone">
+						<i class="fa fa-mobile" aria-hidden="true"></i>
+					</div>
+					<p class="">+7 (495) 677-17-79</p>
+				</div>
+				<small class="adress-line"><strong>Адрес магазина: </strong>г. Москва, Варшавское ш, д.68 к.3</small>
+				<small class="schedule"><strong>График работы: </strong> с 9:00 до 21:00 без выходных</small>
+				<div class="personal-area">
+					<div class="icon sign-in">
+						<i class="fa fa-sign-in" aria-hidden="true"></i>
+					</div>
+					<a href="#" class="decore">Личный кабинет</a>
+				</div>
+			</div>
+			<div class="search">
+				<div class="logo">
+					<h2>Commerce</h2>
+					<small class="slogan">Простой слоган <br> состоящий из <br> шести слов</small>
+				</div>
+				<div class="call-number">
+					<div class="icon phone">
+						<i class="fa fa-mobile" aria-hidden="true"></i>
+					</div>
+					<p class="number">+7 (495) 677-17-79</p>
+					<a href="#" class="decore">Заказать звонок</a>
+				</div>
+				<div class="points-mobile">
+					<a href="">
+						<span class="points"></span>
+					</a>
+				</div>
+				<div class="form-search">
+					<input class="site-search" type="text" placeholder="Поиск по сайту">
+					<button class="lupa" type="submit"></button>
+				</div>
+
+				<div class="basket">
+					<div class="icon cart">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+					</div>
+					<a href="#" class="numbers-purchases">10</a>
+					<a href="#" class="price">10 000 &#8381</p></a>
+				</div>
+			</div>
+		</section>
+		<section class="navigation">
+			<nav class="topmenu">
+				<li class="catalog"><span class="hamburger"></span><a href="#">Каталог товаров</a></li>
+				<li class="item"><a href="#">О компании</a>
+					<ul class="submenu">
+				        <li><a href="#">Item1</a></li>
+				        <li><a href="#">Item1</a></li>
+				    </ul>
+				</li>
+				<li class="item"><a href="#">Новости </a>
+					<ul class="submenu">
+				        <li><a href="#">Item1</a></li>
+				        <li><a href="#">Item1</a></li>
+				    </ul>
+				</li>
+				<li class="item"><a href="#">Соотрудничество </a>
+					<ul class="submenu">
+				        <li><a href="#">Item1</a></li>
+				        <li><a href="#">Item1</a></li>
+				    </ul>
+				</li>
+				<li class="item"><a href="#">Доставка и оплата</a>
+					<ul class="submenu shipping-payment">
+				        <li><a href="#">Доставка</a></li>
+				        <li><a href="#">Самовывоз</a></li>
+				        <li><a href="#">Условия продажи</a></li>
+				        <li><a href="#">Оплата заказа</a></li>
+				        <li><a href="#">Корпоративным клиентам</a></li>
+				    </ul>
+				</li>
+					
+				<li class="item"><a href="#">Обзоры</a>
+					<ul class="submenu reviews">
+				        <li><a href="#">Item1</a></li>
+				        <li><a href="#">Item1</a></li>
+				    </ul>
+				</li>
+				<li class="item"><a href="#">Контакты</a>
+					<ul class="submenu contacts">
+				        <li><a href="#">Item1</a></li>
+				        <li><a href="#">Item1</a></li>
+				    </ul>
+				</li>
+				<li class="item"><a href="#">Пункт меню</a>
+					<ul class="submenu menu-item">
+				        <li><a href="#">Item1</a></li>
+				        <li><a href="#">Item1</a></li>
+				    </ul>
+				</li>
+				<li>
+					<span class="points"></span>
+				</li>
+			</nav>
+		</section>
+	</header>
+	<main>
+		
+	</main>
+	<script>
+		document.querySelector('select').addEventListener('change', function() {
+		  if (this.value !== '') {
+		    location.href = this.value;
+		  }
+		});
+	</script>
+</body>
+</html>
